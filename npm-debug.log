@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'fs' ]
+2 info using npm@1.1.43
+3 info using node@v0.8.3
+4 verbose config file /Users/kobkrit/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /Users/kobkrit/Dropbox/git/socket/package.json
+8 verbose read json /Users/kobkrit/Dropbox/git/socket/node_modules/socket.io/package.json
+9 verbose read json /Users/kobkrit/Dropbox/git/socket/package.json
+10 verbose cache add [ 'fs', null ]
+11 silly cache add name=undefined spec="fs" args=["fs",null]
+12 verbose parsed url { pathname: 'fs', path: 'fs', href: 'fs' }
+13 silly lockFile 3f4bb586-fs fs
+14 verbose lock fs /Users/kobkrit/.npm/3f4bb586-fs.lock
+15 silly lockFile 3f4bb586-fs fs
+16 verbose addNamed [ 'fs', '' ]
+17 verbose addNamed [ null, '' ]
+18 silly lockFile a107b96b-fs fs@
+19 verbose lock fs@ /Users/kobkrit/.npm/a107b96b-fs.lock
+20 silly addNameRange { name: 'fs', range: '', hasData: false }
+21 verbose url raw fs
+22 verbose url resolving [ 'https://registry.npmjs.org/', './fs' ]
+23 verbose url resolved https://registry.npmjs.org/fs
+24 info retry registry request attempt 1 at 18:39:03
+25 http GET https://registry.npmjs.org/fs
+26 http 404 https://registry.npmjs.org/fs
+27 silly registry.get cb [ 404,
+27 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+27 silly registry.get     date: 'Wed, 25 Jul 2012 01:39:04 GMT',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'content-length': '52',
+27 silly registry.get     'cache-control': 'must-revalidate' } ]
+28 silly lockFile a107b96b-fs fs@
+29 error 404 'fs' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Darwin 10.8.0
+31 error command "node" "/usr/local/bin/npm" "install" "fs"
+32 error cwd /Users/kobkrit/Dropbox/git/socket
+33 error node -v v0.8.3
+34 error npm -v 1.1.43
+35 error code E404
+36 error stack Error: 404 Not Found: fs
+36 error stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+36 error stack     at Request.init.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:120:22)
+36 error stack     at Request.EventEmitter.emit (events.js:91:17)
+36 error stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:555:16)
+36 error stack     at Request.EventEmitter.emit (events.js:88:17)
+36 error stack     at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (/usr/local/lib/node_modules/npm/node_modules/request/main.js:517:14)
+36 error stack     at IncomingMessage.EventEmitter.emit (events.js:115:20)
+36 error stack     at IncomingMessage._emitEnd (http.js:366:10)
+36 error stack     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+36 error stack     at CleartextStream.socketOnData (http.js:1356:20)
+37 verbose exit [ 1, true ]
